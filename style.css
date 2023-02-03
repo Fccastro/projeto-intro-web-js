@@ -1,0 +1,953 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  background-color: #f2cd5c;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+  height: 152px;
+  padding: 0 15% 0 15%;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  background-color: #f2cd5c;
+}
+
+footer {
+  padding: 0 15% 2% 15%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Classes and IDs  */
+
+/* header */
+
+header img {
+  height: 60px;
+  width: 350px;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+header nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+header nav .active {
+  text-decoration: underline;
+}
+
+header nav a:hover {
+  transition: 0.3s;
+  color: #f2cd5c;
+  text-decoration: underline;
+}
+
+header a {
+  margin-left: 2%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.menuDrop {
+  display: none;
+}
+
+/* VIEW - home */
+
+/* main */
+
+.panelMain {
+  background: url(./public/img/background-hero.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 777px;
+  justify-content: center;
+}
+
+.panelMain h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.panelMain p {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  margin-bottom: 7%;
+}
+
+.panelMain a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background-color: #000;
+  color: white;
+  width: 450px;
+  height: 79px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.panelMain a:hover {
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* About */
+
+.panelAbout {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 15% 7% 15%;
+}
+
+.panelAbout h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 2%;
+}
+
+.aboutText {
+  width: 83%;
+  margin-bottom: 8%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.panelAbout .testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.panelAbout .testimonials div {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.panelAbout .testimonials p {
+  width: 80%;
+  text-align: justify;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.panelAbout .testimonials img {
+  width: 103px;
+}
+
+/* VIEW - Courses */
+
+/* Panel Main */
+
+.panelMainCourse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 777px;
+  justify-content: center;
+  padding: 0 15% 2% 15%;
+}
+
+.panelMainCourse .courseFlex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7%;
+}
+
+.panelMainCourse .course {
+  background-color: #fff;
+  width: 369px;
+  height: 387px;
+  border-radius: 10px;
+}
+
+.panelMainCourse a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background-color: #000;
+  color: white;
+  width: 450px;
+  height: 79px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.panelMainCourse a:hover {
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.panelMainCourse .course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 387px;
+  height: 369px;
+}
+
+.panelMainCourse .course h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.panelMainCourse .course p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 9% 0 9%;
+}
+
+/* Panel About */
+
+.panelCoursesMod {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 27% 10% 27%;
+}
+
+.panelCoursesMod .mid {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.panelCoursesMod .courseMod {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  height: 246px;
+  width: 100%;
+}
+
+.panelCoursesMod h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+
+.panelCoursesMod h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 2%;
+}
+
+/* VIEW - Contact */
+
+.panelContact {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 27% 5% 27%;
+}
+
+.panelContact h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.9555px;
+  line-height: 36px;
+}
+
+.panelContact label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.9098px;
+  line-height: 25px;
+}
+
+.contactBox {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  width: 486.16px;
+  height: 590px;
+}
+
+.contactW {
+  display: flex;
+  flex-direction: column;
+  padding: 7% 10% 7% 10%;
+}
+
+.contactW label {
+  margin-bottom: 1%;
+}
+
+.contactW h4 {
+  margin-bottom: 2%;
+}
+
+.contactW input {
+  font-family: "Poppins";
+  height: 40px;
+  border: 1.40915px solid #0e0e0e;
+  border-radius: 2.81829px;
+  margin-bottom: 3%;
+  font-size: 22px;
+  padding: 0 12px 0 12px;
+}
+
+.contactW textarea {
+  font-family: "Poppins";
+  height: 180px;
+  border: 1.40915px solid #0e0e0e;
+  border-radius: 2.81829px;
+  margin-bottom: 3%;
+  resize: none;
+  font-size: 22px;
+  padding: 0 12px 0 12px;
+}
+
+.contactW button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background-color: #f6c34a;
+  color: #000;
+  height: 56px;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.9098px;
+  line-height: 25px;
+}
+
+.contactW button:hover {
+  transition: 0.5s;
+  color: #000;
+  background-color: #d99f18;
+  cursor: pointer;
+}
+
+/* VIEW - ADM TURMAS */
+
+.admNav {
+  background-color: #000;
+  color: #707070;
+  min-width: 388px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.admNav nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.admNav a {
+  margin-left: 35%;
+  margin-top: 11%;
+  color: #707070;
+  text-decoration: none;
+}
+
+.admin .active {
+  color: #fff;
+}
+
+.admin a:hover {
+  transition: 0.3s;
+  color: #fff;
+}
+
+.admClasses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 12% 5% 12%;
+}
+
+.admClasses .searchClass {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+}
+
+.admClasses .searchClass input {
+  height: 43px;
+  width: 450px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 1% 0 1%;
+}
+
+.admClasses .searchClass button {
+  height: 43px;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.admin {
+  display: flex;
+  flex-direction: row;
+  border-bottom: #000 2px solid;
+}
+
+.admin h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 10%;
+}
+
+.admin label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 2% 0 2% 0;
+}
+
+.admin input,
+.admin select {
+  width: 330px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.admin button {
+  background-color: #000;
+  height: 50px;
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 9px;
+  margin-top: 15%;
+}
+
+.admin #searchClass {
+  margin-top: 0;
+}
+
+.admin #calcBtn {
+  margin-bottom: 10%;
+}
+
+.admin #displayClasses {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.admin #displayClasses .class {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  height: 240px;
+  width: 223px;
+  border-radius: 10px;
+  margin: 2%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.admin #displayClasses .class h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10%;
+}
+
+.admin #displayClasses .class li {
+  margin-bottom: 1.5%;
+}
+
+.admin #displayClasses .class ol {
+  list-style-type: none;
+}
+
+/* VIEW - ADM MATRICULAS */
+
+.admin .register,
+.admin .finance {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding: 3% 12% 5% 12%;
+  justify-content: space-around;
+}
+
+.admin .register .regForm,
+.admin .finance .calc,
+.admin .finance #reportStud {
+  display: flex;
+  flex-direction: column;
+}
+
+#report img {
+  float: right;
+}
+
+/* VIEW - ADM FINANC */
+
+.admin .finance #studs ol {
+  list-style-type: none;
+  margin-top: 5%;
+}
+
+.admin .finance #chkCurso {
+  display: flex;
+  justify-content: space-around;
+}
+
+.admin .finance #chkCurso input {
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+}
+
+.admin .finance #chkCurso label {
+  display: flex;
+  border: #000 2px solid;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin .finance #chkCurso label:active {
+  transform: scale(0.9);
+}
+
+/* FOOTER */
+
+footer img {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+footer iframe {
+  margin-bottom: 2%;
+}
+
+footer h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 4%;
+}
+
+footer a {
+  color: #000;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  transition: 0.1s;
+  color: #fff;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerContent div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContent .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.fa-brands {
+  font-size: 30px;
+}
+
+/* responsivo */
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    align-items: unset;
+    padding: 2% 2% 2% 2%;
+    height:fit-content;
+  }
+
+  header img {
+    width:270px;
+    height:46px;
+    position: absolute;
+    left: 20%;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  .menuDrop {
+    display: unset;
+  }
+  
+  .menuDrop .links {
+    max-height: 0;
+    overflow: hidden;
+    width: 121px;
+    position:absolute;
+    background-color: #fff;
+    z-index:10;
+  }
+  
+  .menuDrop input {
+    display:none;
+  }
+  
+  .menuDrop i{
+    font-size: 50px;
+  }
+
+  .menuDrop ul{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .menuDrop a{
+    color: #000;
+    text-decoration: none;;
+  }
+
+  .menuDrop a:hover{
+    background-color:#707070
+  }
+  
+  .menuDrop input:checked ~ .links {
+    max-height: 100%;
+  }
+  
+  /* Home */
+  
+  .panelMain {
+    padding: 10%;
+    height: 490px;
+  }
+
+  .panelMain a {
+    font-size: 20px;
+    width: 330px;
+    height: 65px;
+  }
+
+  .panelMain h1 {
+    font-size: 48px;
+  }
+
+  .panelMain p {
+    font-size: 25px;
+  }
+
+  .panelAbout {
+    padding: 7% 8% 7% 8%;
+  }
+
+  .panelAbout .aboutText {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .panelAbout .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panelAbout .testimonials div {
+    scale: 0.95;
+  }
+
+  .panelAbout .testimonials div:nth-child(-n + 2) {
+    display: none;
+  }
+
+  /* Cursos */
+
+  .panelMainCourse {
+    padding: 0 20% 0% 15%;
+    height:fit-content;
+  }
+
+  .panelMainCourse a {
+    margin-bottom:4%;
+    width: 340px;
+  }
+
+  .panelMainCourse .courseFlex {
+    flex-direction: column;
+    margin-bottom:unset;
+    margin:2% 0 2% 0;
+  }
+
+  .panelMainCourse .course {
+    width: 341px;
+    height: 250px;
+    margin:2% 0 2% 0;
+  }
+
+  .panelMainCourse .course h4 {
+    font-size:25px;
+    margin: 3% 0% 3% 0%;
+  }
+
+  .panelMainCourse .course p {
+    font-size:12px;
+  }
+
+  .panelCoursesMod {
+    padding: 10% 10% 10% 5%;
+  }
+
+  .panelCoursesMod h4 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .panelCoursesMod h5 {
+    font-size: 22px;
+    line-height:20px;
+  }
+  
+  .panelCoursesMod p {
+    font-size: 15px;
+  }
+
+  .panelCoursesMod .courseMod {
+    flex-direction: column;
+    padding-bottom: 3%;
+  }
+
+  /* Contato */
+
+  .contactBox {
+    scale: 0.75;
+  }
+
+  .panelContact {
+    padding: unset;
+  }
+  
+  /* Admin */
+  
+  .admin {
+    flex-direction: column;
+  }
+
+  .admin #displayClasses {
+    margin-bottom:5%;
+  }
+
+  .admNav nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .admNav a {
+    margin-left:unset;
+    font-size: 17px;
+    margin-top:unset;
+  }
+
+  .admClasses {
+    padding:unset;
+  }
+
+  .admClasses .searchClass {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .admClasses .searchClass input {
+    width:340px;
+    margin-bottom:10%;
+  }
+
+  /* Register */
+
+  .admin .register, .admin .finance {
+    display:flex;
+    flex-direction:column;
+    padding: 3% 0 5% 0;
+    align-items: center;
+  }
+
+  .admin .register .regForm, .admin .finance .calc, .admin .finance #reportStud {
+    align-items: center;
+  }
+
+  .admin button{
+    width: -webkit-fill-available;
+  }
+
+  .register #report {
+    width: 86vw;
+    margin-top:5%;
+  }
+
+  /* Financeiro */
+
+  .admin #calcBtn {
+    width: -webkit-fill-available;
+  }
+
+  #reportPrice {
+    margin-bottom:5%;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 5% 15% 5% 15%;
+  }
+
+  footer iframe {
+    display: none;
+  }
+
+  footer h4 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+
+  .footerContent {
+    flex-direction: column;
+  }
+
+  .footerContent .social {
+    justify-content: space-between;
+  }
+
+  .fa-brands {
+    font-size: 50px;
+  }
+}
